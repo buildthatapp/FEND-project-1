@@ -1,134 +1,117 @@
+/* Common general styles go here */
 * {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	padding: 0;
-}
-a  {
-    	text-decoration: none;
-    	color: #4C9EFF;
-    }
-body {
-	background-color: #white;
-}
-h1, h2 {
-	color: #003A7F;
-}
-p {
-	color: #0075FF;
-}
-
-
-.color-key {
-	background-color: white;
-	width: 25%;
-	float: left;
-}
-#color1, #color1 p{
-	background-color: #003A7F;
-}
-#color2, #color2 p {
-	background-color: #4C9EFF;
-}
-#color3, #color3 p {
-	background-color: #0075FF;
-}
-
-
-
-
-    
-    .main {
-    	width: 75%;
-    	float: right;
-    }
-    img, .featured-work img{
-    	width: 100%;
-    	height: 100%;
-    }
-    .featured-work {
-    	width:100%;
-    }
-    
-    .colors div{
-    	width:100%;
-    	height: 100px;
-    }
-    article {
-    	border: 1px solid black;
-    }
-    
-    #color1, #color2, #color3 {
-    	height: 10%;
-    	width: 25%;
-    }
-
-    /* Nexus 5 Breakpoint */
-@media only screen and (max-width: 360px) {
-    body {
-      	max-width: 360px;
-      	font-size: 36px;
-    }
-    .main {
-    	max-width: 360px;
-    }
-    img, .featured-work img{
-    	width: 100%;
-    	max-width: 360px;
-    	height: 100%;
-    	max-height: 240px;
-    }
-    .featured-work {
-    	width:360px;
-    }
-    
-    article {
-    	border: 1px solid black;
-    }
-    .colors{
-    	height: 100%;
-    	width: 100%;
-    }
-    #color1, #color2, #color3 {
-    	height: 100%;
-    	width: 50%;
-    }
-
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+        padding: 0;
 
 }
 
-/* Ipad breakpoint */
-@media only screen and (max-width: 768px) {
-    body {
-      	max-width: 768px;
-      	font-size: 24px;
+img {
+    max-width: 100%;
+     
+     height: auto;
+ }
+
+#color1 {
+        background-color: #003A7F;
+        height: 50%;
+        width: 20%;
+
     }
-    .main {
-    	max-width: 768px;
+#color2 {
+        background-color: #4C9EFF;
+        height: 50%;
+        width: 20%;
     }
-    img, .featured-work img{
-    	width: 100%;
-    	max-width: 768px;
-    	height: 100%;
-    	max-height: 360px;
+#color3 {
+        background-color: #0075FF;
+        height: 50%;
+        width: 20%;
     }
-    .featured-work {
-    	width:768px;
+
+/* Nexus 5 in Portrait mode */
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px) 
+  and (-webkit-device-pixel-ratio: 3) 
+  and (orientation: portrait) {
+    /* Add your style here */
+    * {
+        font-size: 1.05em;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+    }
+    img {
+        min-width: 360px;
+        max-width: 360px;
+        max-height: 200px;
     }
     .colors {
-    	width:100%;
-    	width: 100%;
-    }
-    article {
-    	border: 1px solid black;
+        min-width: 360px;
+        max-width: 360px;
+        max-height: 200px;
     }
     
-    #color1, #color2, #color3 {
-    	height: 100%;
-    	width: 50%;
-    }
-
-
 }
+
+
+
+/* Ipad in Portrait mode */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1017px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    /* Add your style here */
+    * {
+        font-size: 1.2em;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+    }
+    img {
+        min-width: 768px;
+        max-width: 1017px;
+        max-height: 300px;
+    }
+    .colors {
+        min-width: 768px;
+        max-width: 1017px;
+        max-height: 200px;
+    }
+}
+
+/* Desktop mode */
+@media only screen 
+  and (min-device-width: 1018px) 
+  and (max-device-width: 1440px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    /* Add your style here */
+    * {
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 0;
+        border: 0;
+    }
+    img {
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 240px;
+    }
+    .colors {
+        min-width: 1025px;
+        max-width: 1440px;
+        max-height: 280px;
+    }
+}
+
 
 
